@@ -8,7 +8,6 @@ repo_url: https://github.com/DEtrees95/discord-bot
 
 theme:
   name: material
-  language: de
   palette:
     - scheme: slate
       primary: indigo
@@ -35,22 +34,22 @@ theme:
 plugins:
   - search
   - i18n:
-      default_language: de
-      default_language_only: false
+      docs_structure: folder
       languages:
-        de:
+        - locale: de
+          default: true
           name: Deutsch
           build: true
-        en:
+        - locale: en
           name: English
           build: true
-        ja:
+        - locale: ja
           name: 日本語
           build: true
-        ko:
+        - locale: ko
           name: 한국어
           build: true
-        th:
+        - locale: th
           name: ภาษาไทย
           build: true
 
