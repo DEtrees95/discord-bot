@@ -1,12 +1,13 @@
 """Main entry point for the Discord bot."""
 
 import os
+from pathlib import Path
 
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(Path(__file__).parent.parent / ".env")
 
 
 def create_bot() -> commands.Bot:

@@ -1,0 +1,72 @@
+site_name: D_BOT_DEV Documentation
+site_url: https://DEtrees95.github.io/discord-bot
+site_author: DEtrees95
+site_description: Discord Bot - Python Learning Project
+
+repo_name: DEtrees95/discord-bot
+repo_url: https://github.com/DEtrees95/discord-bot
+
+theme:
+  name: material
+  language: de
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - i18n:
+      default_language: de
+      default_language_only: false
+      languages:
+        de:
+          name: Deutsch
+          build: true
+        en:
+          name: English
+          build: true
+        ja:
+          name: 日本語
+          build: true
+        ko:
+          name: 한국어
+          build: true
+        th:
+          name: ภาษาไทย
+          build: true
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Commands: commands.md
+  - Development: development.md
